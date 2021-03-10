@@ -16,9 +16,7 @@
     --blue: #5a9ce5;    
 }
 
-body{
-    max-width: 1440px;
-}
+body{height: 100vh;}
 
 .text-center{
     text-align: center;
@@ -31,6 +29,7 @@ body{
       flex-direction: column;
       align-items: center;
       padding: 75px 32px;
+      height: 85vh;
   }
 
  /*Header area*/ 
