@@ -16,6 +16,10 @@
     --blue: #5a9ce5;    
 }
 
+body{
+    max-width: 1440px;
+}
+
 .text-center{
     text-align: center;
 }
@@ -32,25 +36,38 @@
  /*Header area*/ 
 .header{
     margin-bottom: 50px;
+    font-size: 16px;
 }
 
 .pre-tittle{
-    font-size:21px ;
+    font-size:1.2em;
     color: var(--light-text);
     margin-bottom: 0;
+    font-weight: 200;
 }
 
 .main-tittle{
-    font-size: 24px;
+    font-size: 1.4em;
     font-weight: 600;
+    margin-top: 0;
     margin-bottom: 15px;
     color: var(--bold-text);
 }
 
 .subtittle{
-    font-size:15px ;
+    font-size:0.8em ;
     color: var(--light-text);
-    padding: 0px 3px;
+    padding: 0px 16px;
+}
+
+@media(min-width:1046px){
+    .header{
+        font-size: 24px;
+    }
+    .subtittle{
+        max-width: 60%;
+        margin: auto;
+    }
 }
 
 /*Main area*/
@@ -59,21 +76,84 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    
 }
 
 .card{
     height: 160px;
-    border: 1px solid red;
     margin-bottom: 20px;
     padding: 25px 20px;
-    border-radius: 10px;
+    border-radius: 4px;
     background-color: #ffffff;
+    box-shadow: 0 10px 30px #83a6d288;
+    max-width: 256px;
+    
+}
+.supervisor{
+    border-top: 4px solid var(--cyan);
+}
+.team-builder{
+    border-top: 4px solid var(--red);
+}
+.karma{
+    border-top: 4px solid var(--yellow);
+}
+.calculator{
+    border-top: 4px solid var(--blue);
 }
 .sec-tittle{
     color: var(--bold-text);
 }
 .sec-p{
     color: var(--light-text);
-    font-size: 14px;
+    font-size: 13px;
 }
-.img-ctr{text-align: right;}
+.img-ctr{
+    margin-top: 40px;
+    text-align: right;}
+
+.img{
+    max-width: 22%;
+}
+
+@media(min-width:1046px){
+ 
+    .main{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 50%);
+        width: 80%;
+        max-width: 960px;
+        gap: 0px;
+        row-gap: 20px;
+        
+    }
+    .card{
+        margin: 0;
+    }
+    .supervisor{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-self: end;
+        align-self: center;
+    }
+
+    .team-builder{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: center;
+        
+    }
+    .karma{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        justify-self: center;
+    }
+    .calculator{
+        grid-column: 3/4;
+        grid-row: 1/3;
+        align-self: center;
+        justify-self: start;
+    }
+}
