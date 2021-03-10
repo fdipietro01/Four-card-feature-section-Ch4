@@ -1,4 +1,8 @@
-  
+*{
+    margin:0;
+    padding: 0;
+}  
+
 :root {
     --bg-body: #fafafa;
     --light-text: #aaabb3;
@@ -9,10 +13,67 @@
     --cyan: #4fcdcd;
     --red: #d55c60;
     --yellow: #f4ae56;
-    --blue: #5a9ce5;
+    --blue: #5a9ce5;    
+}
+
+.text-center{
+    text-align: center;
+}
+
+.body-wrapper{
+      background-color: var(--bg-body);
+      font-family: Poppins, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 75px 32px;
   }
 
-  .body-wrapper{
-      background-color: var()--bg-body;
-      font-family: Poppis, sans-serif;
-  }
+ /*Header area*/ 
+.header{
+    margin-bottom: 50px;
+}
+
+.pre-tittle{
+    font-size:21px ;
+    color: var(--light-text);
+    margin-bottom: 0;
+}
+
+.main-tittle{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--bold-text);
+}
+
+.subtittle{
+    font-size:15px ;
+    color: var(--light-text);
+    padding: 0px 3px;
+}
+
+/*Main area*/
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    height: 160px;
+    border: 1px solid red;
+    margin-bottom: 20px;
+    padding: 25px 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.sec-tittle{
+    color: var(--bold-text);
+}
+.sec-p{
+    color: var(--light-text);
+    font-size: 14px;
+}
+.img-ctr{text-align: right;}
