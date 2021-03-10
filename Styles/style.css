@@ -1,0 +1,18 @@
+  
+:root {
+    --bg-body: #fafafa;
+    --light-text: #aaabb3;
+    --bold-text: #4f4e5d;
+  
+    /* Cards */
+    --white: #ffffff;
+    --cyan: #4fcdcd;
+    --red: #d55c60;
+    --yellow: #f4ae56;
+    --blue: #5a9ce5;
+  }
+
+  .body-wrapper{
+      background-color: var()--bg-body;
+      font-family: Poppis, sans-serif;
+  }
